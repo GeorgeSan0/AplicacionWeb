@@ -1,0 +1,39 @@
+body{
+    background-image: url(../images/outerspace-10.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.formulario{
+    background: rgba(0, 0, 0, -.1) ;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 0 30px rgba(0, 0, 0,+0.878 );
+    color: white;
+}
+.ingresar{
+    border: 2px solid white;
+    background:rgba(0, 0, 0, +0.3);
+    padding: 10;
+    border-radius: 4px ;
+    font-size: 16px;
+    font-weight: 700!important;
+    color: white;
+    box-shadow: 0 0 50px rgba(0, 0, 0, +0.108);
+    transition: 0.5s ease-in;
+    text-decoration-style: none;
+    text-decoration-line: none;
+    
+}
+.ingresar:hover{
+    color: black;
+}
+.form-control{
+    background:rgba(0,0,0,+.3);
+    border-style: none;
+    outline: none;
+    box-shadow: none;
+}
+.form-control::placeholder{
+    color: white;
+}

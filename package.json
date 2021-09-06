@@ -1,0 +1,26 @@
+{
+  "name": "rsp",
+  "version": "1.0.0",
+  "description": "Aplicacion web interactiva de aprendizaje",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "aplicacion",
+    "web"
+  ],
+  "author": "Jorge Armas - Adrian Guevara - Anto Simbaña",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "dotenv": "^10.0.0",
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "express-session": "^1.17.2",
+    "hbs": "^4.1.2",
+    "mysql": "^2.18.1",
+    "nodemon": "^2.0.12",
+    "sweetalert2": "^11.1.4"
+  }
+}

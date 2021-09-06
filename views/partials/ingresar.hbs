@@ -1,0 +1,39 @@
+<div class="container" id="mos">
+    <div class="row justify-content-center pt-5 mt-5 mr-1">
+        <div class="col-md-6 col-sm-8 col-xl-6 col-lg-4 formulario">
+            <form action="/auth" method="POST" autocomplete="off">
+                <div class="form-group text-center pb-3">
+                    <h1 class="text-light inicio", style="font-size: 50px;">Iniciar Sesión</h1>
+                </div>
+                <br>
+                <div class="form-group mx-sm-4 pb-3">
+                    <input type="text" class="form-control" name="user"  placeholder="Ingrese su Usuario" >
+                </div>
+                <br>
+                <div class="form-group mx-sm-4 pb-3">
+                    <input type="password" class="form-control" name="pass" placeholder="Ingrese su Contraseña" >
+                </div>
+                <div class="form-group mx-sm-4 text-center pb-3">
+                    <input type="submit" class="btn btn-block ingresar" onclick="mostar()" value="INGRESE">
+                </div>
+            </form>
+            <div class="form-group text-center">
+                <span><a href="/registro"class="registro" >REGISTRARSE</a></span>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+<script type="text/javascript">
+
+function mostar(){
+    Swal.fire({
+        position: 'top-end',
+        icon: 'success',
+        title: 'Your work has been saved',
+        showConfirmButton: false,
+        timer: 1500
+      })
+}
+</script>
