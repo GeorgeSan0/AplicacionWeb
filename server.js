@@ -45,6 +45,9 @@ app.get('/registro', (req, res) => {
     res.render('registro');
 });
 
+app.get('/slider', (req, res) => {
+    res.render('slider');
+});
 //10 -Registracion
 app.post('/registro', async (req,res)=>{
     const user = req.body.user;
@@ -66,9 +69,10 @@ app.post('/auth', async (req,res)=>{
     if(user && pass){
         connection.query('SELECT * FROM tbllogin WHERE usuario = ? and pass=?',[user,pass], async(error,results)=>{
             if(results.length ==0){
-                res.render('home', swal());
+                
             }else{
-               
+                console.log(results);
+                res.render('slider');
             }
         })
     }else{

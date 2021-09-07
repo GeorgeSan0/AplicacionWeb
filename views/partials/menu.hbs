@@ -1,0 +1,70 @@
+    <section class="d-flex">
+        <h1 class="align-self-center text-center text-light mx-auto">Menu fullscreen</h1>
+    </section>  
+    
+ <div id="menu" class="position-absolute w-100">
+        <div class="row no-gutters">
+            <div class="col-lg-6">
+                <div id="menu-dark" class="bg-dark ">
+                    <div id="content-dark" class="d-flex flex-column ">
+                        <ul class="list-unstyled display-4 mb-2 position-absolute">
+                            <li class="mb-3"><a href="" class="text-light">Home</a></li>
+                            <li class="mb-3"><a href="" class="text-light">Services</a></li>
+                            <li class="mb-3"><a href="" class="text-light">About Us</a></li>
+                            <li><a href="" class="text-light">Contact Us</a></li>
+                        </ul>
+                    </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div id="menu-light" class="bg-light">
+                    <div id="content-light">
+                        <a href="#">
+                            <img src="assets/images/outerspace-10.gif" class="img-fluid mb-3">
+                        </a>
+                        <h5 class="mb-0">5 trend UX designers should know for 2021</h5>
+                        <a href="#" class="text-muted">learn more</a>
+                    </div>
+                </div> 
+            </div>
+        </div>
+    </div>
+   
+    <script>
+        function openMenu(){
+            let menuDark = document.getElementById('menu-dark').style.width= '100%';
+            let menuLight = document.getElementById('menu-light').style.width= '100%';
+            let circle = document.getElementById('circle').style.cssText = 'background-color: #000000; box-shadow; 0 .5rem 1rem rgba(0,0,0, .15)';
+            let menuOpen = document.getElementById('menu-open').style.cssText = 'transform: rotate(90deg); opacity: 0';
+            
+            setTimeout(() =>{
+                let menuClose = document.getElementById('menu-close').style.cssText = "opacity: 100; z-index: 9999";
+            }, 500)
+
+            setTimeout(() =>{
+                let contentDark = document.getElementById('content-dark').style.opacity = '1';
+                let contentLight = document.getElementById('content-light').style.opacity = '1';
+            }, 1000)
+        }
+        function hideMenu(){
+            let menuClose = document.getElementById('menu-close').style.cssText = "opacity: 0; z-index: 999";
+            let circle = document.getElementById('circle').style.cssText = 'background-color: transparent; box-shadow: none';
+            
+            let contentDark = document.getElementById('content-dark').style.opacity = '0';
+            let contentLight = document.getElementById('content-light').style.opacity = '0';
+
+            setTimeout(() => {
+                let menuOpen = document.getElementById('menu-open').style.cssText = 'transform: rotate(0deg); opacity: 1'; 
+            }, 500)
+            
+            setTimeout(() => {
+                let menuDark = document.getElementById('menu-dark').style.width= '0';
+                let menuLight = document.getElementById('menu-light').style.width= '0';
+        
+            }, 500)
+        }
+    </script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
