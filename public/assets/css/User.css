@@ -229,8 +229,8 @@ body{
 
 .cubo > span{
     position: absolute;
-    width: 12em;/*2*/
-    height: 12em;
+    width: 8em;/*2*/
+    height: 8em;
     border: 2px solid white;
     box-shadow: inset 0px 0px 15px 5px rgba(67, 195,255,0.2), 0px 0px 40px 1px rgba(67, 195,255,0.15);
     border-radius: 4px;
