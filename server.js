@@ -3,7 +3,11 @@ const app = express()
 
 const hbs = require('hbs');
 
+const cors = require('cors');
+
+
 const port = process.env.PORT || 3000;
+app.use(cors());
 
 app.use(express.urlencoded({extend:false}));
 app.use(express.json());
@@ -80,6 +84,19 @@ app.post('/auth', async (req,res)=>{
     }
 })
 
+//mostrar todos los datos de tbtcuento
+
+
+//mostrar todos los datos de tbtcuento
+app.get('/api/tbtcuento',( req,res)=>{
+    connection .query('Select *from tbtcuento', (error,filas)=>{
+        if (error){
+            throw error;
+        }else{
+            res.send(filas);
+        }
+    })
+});
 
 app.listen(port, () =>{
     console.log(`Escuchando peticiones en el puerto ${port}`)
