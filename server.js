@@ -69,6 +69,14 @@ app.get('/juego1', (req, res) => {
     res.render('juego1');
 });
 
+app.get('/juego2', (req, res) => {
+    res.render('juego2');
+});
+
+app.get('/juego3', (req, res) => {
+    res.render('juego3');
+});
+
 //10 -Registracion
 app.post('/registro', async (req,res)=>{
     const user = req.body.user;

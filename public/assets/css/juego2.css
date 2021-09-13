@@ -1,52 +1,46 @@
-/**
-* Wordfind.js 0.0.1
-* (c) 2012 Bill, BunKat LLC.
-* Wordfind is freely distributable under the MIT license.
-* For all details and documentation:
-*     http://github.com/bunkat/wordfind
-*/
-
+body{
+  background: radial-gradient(ellipse at bottom, #1b2735 0%,#090a0f 100%);
+  display: grid;
+}
 p {
-    font: 22pt sans-serif;
-    margin: 20px 20px 0px 20px;
-  }
+  font: 22pt sans-serif;
+  margin: 20px 20px 0px 20px;
+}
   
-  /**
-  * Styles for the puzzle
-  */
-  #juego {
-    border: 1px solid black;
-    padding: 20px;
-    float: left;
-    margin: 30px 20px;
-    
-  }
+
+ #juego {
+   border: 1px solid white;
+   padding: 20px;
+   float: left;
+   margin: 30px 20px;  
+   align-items: center; 
+   text-align: center;
+ }
   
   #juego div {
     width: 100%;
     margin: 0 auto;
   }
   
-  /* style for each square in the puzzle */
+
   #juego .puzzleSquare {
     height: 30px;
     width: 30px;
     text-transform: uppercase;
-    background-color: white;
+    background-color: transparent;
     border: 0;
     font: 1em sans-serif;
+    color: white;
   }
   
   button::-moz-focus-inner {
     border: 0;
   }
   
-  /* indicates when a square has been selected */
   #juego .selected {
     background-color: orange;
   }
   
-  /* indicates that the square is part of a word that has been found */ 
   #juego .found {
     background-color: blue;
     color: white;
@@ -57,23 +51,15 @@ p {
     color: white;
   }
   
-  /* indicates that all words have been found */
   #juego .complete {
     background-color: green;
   }
   
-  /**
-  * Styles for the word list
-  */
   #Palabras {
-    padding-top: 20px;
-    -moz-column-count: 2;
-    -moz-column-gap: 20px;
-    -webkit-column-count: 2;
-    -webkit-column-gap: 20px;
-    column-count: 2;
-    column-gap: 20px;
-    width: 300px;
+    padding-top: 0%;
+    color: white;
+    align-items: left; 
+    text-align: left;
   }
   
   #Palabras ul {
@@ -86,13 +72,38 @@ p {
   }
   
   #Palabras .wordFound {
-    text-decoration: line-through;
+    
     color: gray;
   }
   
-  /**
-  * Styles for the button
-  */
   #solve {
     margin: 0 30px;
+    margin-left: 40%;;
+    margin-right: 40%;
+    color: white;
   }
+
+  #solver {
+    margin: 0 30px;
+    margin-left: 44%;
+    margin-right: 45%;
+    color: white;
+  }
+
+  button {
+    font-family: 'DotGothic16', sans-serif;
+    background-color: transparent;
+    border: 2px solid #212529;
+    font-size: 1em;
+    transition: color 1s,transform 1s, border-color 1s, box-shadow 1.25s  ; 
+  }
+
+  button:hover{
+    border: 2px solid #ebebeb;
+    background: #212529;
+    color: #ebebeb;
+    box-shadow: 0 0.5em 0.5em -0.2em  #ebebeb;
+  }
+
+
+  
