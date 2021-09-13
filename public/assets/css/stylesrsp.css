@@ -2,6 +2,10 @@ body{
     background-color: #bfcde0;
 }
 
+::-webkit-scrollbar {
+    display: none;
+}
+
 img{
     padding-left: 10%;
     height: 550px;
@@ -60,7 +64,7 @@ h2{
 
 .img1{
     height: 550px;
-    width: 700px;
+    width: 600px;
 }
 
 /*seccion one*/
@@ -69,11 +73,12 @@ h2{
     padding-top: 5%;
 
 }
+
 .parrafo2{
     padding-top: 3%;
     padding-left: 2%;
     padding-right: 3%;
-    padding-bottom: 5%;
+    padding-bottom: 1%;
     background: rgba(0, 0, 0, -.1) ;
     border-radius: 10px;
     box-shadow: 0 0 30px rgba(0, 0, 0,+0.878 );
@@ -98,14 +103,16 @@ h2{
 }
 
 .parrafo3{
-    padding-top: 6%;
-    padding-left: 2%;
-    padding-right: 2%;
+    padding-top: 3%;
+    padding-left: 1%;
+    padding-right: 1%;
+    padding-bottom: 1%;
     background: rgba(0, 0, 0, -.1) ;
     border-radius: 10px;
     box-shadow: 0 0 30px rgba(0, 0, 0,+0.878 );
     color: white;
     margin-left: 20px;
+    margin-right: 5px;
 
 }
 
@@ -123,16 +130,18 @@ h2{
 }
 
 .parrafo4{
-    padding-top: 6%;
-    padding-left: 2%;
-    padding-right: 2%;
+    padding-top: 3%;
+    padding-left: 1%;
+    padding-right: 1%;
+    padding-bottom: 0.5%;
     background: rgba(0, 0, 0, -.1) ;
     border-radius: 10px;
     box-shadow: 0 0 30px rgba(0, 0, 0,+0.878 );
     color: white;
-    margin-right: 20px;
-
+    margin-left: 20px;
+    margin-right: 5px;
 }
+
 .img4{
     height: 500px;
     width: 725px;
@@ -148,20 +157,21 @@ h2{
 }
 
 .parrafo5{
-    padding-top: 7%;
-    padding-left: 2%;
-    padding-right: 2%;
+    padding-top: 3%;
+    padding-left: 1%;
+    padding-right: 1%;
     background: rgba(0, 0, 0, -.1) ;
     border-radius: 10px;
     box-shadow: 0 0 30px rgba(0, 0, 0,+0.878 );
     color: white;
     margin-left: 20px;
+    margin-right: 5px;
     margin-bottom: 20px;
-
-
 }
 
 .img5{
+    height: 550px;
+    width: 710px;
     padding-left: 5%;
     padding-right: 6%;
 }
