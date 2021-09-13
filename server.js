@@ -57,6 +57,14 @@ app.get('/cuento1', (req, res) => {
     res.render('cuento1');
 });
 
+app.get('/cuento2', (req, res) => {
+    res.render('cuento2');
+});
+
+app.get('/cuento3', (req, res) => {
+    res.render('cuento3');
+});
+
 app.get('/juego1', (req, res) => {
     res.render('juego1');
 });

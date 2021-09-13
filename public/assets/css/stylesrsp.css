@@ -5,7 +5,6 @@ body{
 ::-webkit-scrollbar {
     display: none;
 }
-
 img{
     padding-left: 10%;
     height: 550px;
@@ -138,13 +137,13 @@ h2{
     border-radius: 10px;
     box-shadow: 0 0 30px rgba(0, 0, 0,+0.878 );
     color: white;
-    margin-left: 20px;
+    margin-left: 40px;
     margin-right: 5px;
 }
 
 .img4{
     height: 500px;
-    width: 725px;
+    width: 600px;
     padding-left: 5%;
     padding-right: 3%;
 }
