@@ -52,6 +52,15 @@ app.get('/registro', (req, res) => {
 app.get('/slider', (req, res) => {
     res.render('slider');
 });
+
+app.get('/cuento1', (req, res) => {
+    res.render('cuento1');
+});
+
+app.get('/juego1', (req, res) => {
+    res.render('juego1');
+});
+
 //10 -Registracion
 app.post('/registro', async (req,res)=>{
     const user = req.body.user;
@@ -62,7 +71,7 @@ app.post('/registro', async (req,res)=>{
         if(error){
             console.log(error);
         }else{
-            res.send('<script>alert("Hello")</script>')
+            res.render('home');
         }
     })
 })
@@ -83,6 +92,8 @@ app.post('/auth', async (req,res)=>{
         res.send('por favor ingrese un usuario y/o password')
     }
 })
+
+
 
 //mostrar todos los datos de tbtcuento
 

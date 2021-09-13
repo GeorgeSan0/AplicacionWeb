@@ -7,9 +7,17 @@
     display: none;
 }
 
+#bienvenido{
+    background: rgba(0, 0, 0, -.1) ;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 30px rgba(0, 0, 0,+0.878 );
+    color: white;
+}
+
 body{
     font-family: 'Titillium Web', sans-serif;
-    background-image: url("../images/menu.jpg");
+    background-image: url("../images/outerspace-10.gif");
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
