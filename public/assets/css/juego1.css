@@ -67,7 +67,7 @@ a{
 .nuevo-juego {
     cursor: pointer;
     background: rgba(0, 0, 0, -.1) ;
-    padding: 20px;
+    padding: 10px;
     border-radius: 10px ;
     box-shadow: 0 0em 0.5em -0.2em  #212529;
     font-size: 130%;
@@ -95,6 +95,24 @@ a{
         transform: rotateY(0deg);
     }
 }
+
+#title {
+    top: 50%;
+    left: 0;
+    right: 0;
+    color: #fff;
+    text-align: center;
+    font-family: Lato;
+    font-size: 35px;
+    letter-spacing: 10px;
+    padding-left: 10px;
+  }
+  
+  #title span {
+    background: -webkit-linear-gradient(white, #38495a);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
 
 /* burbujas*/
 .burbuja{

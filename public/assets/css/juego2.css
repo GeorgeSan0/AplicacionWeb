@@ -6,7 +6,23 @@ p {
   font: 22pt sans-serif;
   margin: 20px 20px 0px 20px;
 }
-  
+#title {
+  top: 50%;
+  left: 0;
+  right: 0;
+  color: #fff;
+  text-align: center;
+  font-family: Lato;
+  font-size: 35px;
+  letter-spacing: 10px;
+  padding-left: 10px;
+}
+
+#title span {
+  background: -webkit-linear-gradient(white, #38495a);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 
  #juego {
    border: 1px solid white;
@@ -62,6 +78,7 @@ p {
     text-align: left;
   }
   
+
   #Palabras ul {
     list-style-type: none;
   }
